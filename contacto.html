@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto barberia chirri</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/navaja.png" alt="logo de la barberia"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombre y apellido">Nombre y apellido</label>
+                <input type="text" id="nombre y apellido" class="padron" required>
+                <label for="correo electronico">Correo electronico</label>
+                <input type="email" id="correo electronico" class="padron" required placeholder="correo@dominio.xxx">
+                <label for="telefono">telefono</label>
+                <input type="tel" id="telefono" class="padron" required placeholder="3xx xxx xxxx">
+                <label for="mensaje">Mensaje</label>
+                <textarea id ="mensaje" cols="70" rows="10" class="padr on" required></textarea>
+                <fieldset>
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>
+                    <label for="radio-telefono"><input type="radio" name="contacto"  value="Telefono" id="radio-telefono">Telefono</label>
+                    <label for="radio-wp"><input type="radio" name="contacto"  value="Whatsapp" id="radio-wp" checked>Whatsapp</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>¿En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>mañana</option>
+                        <option>tarde</option>
+                        <option>noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recivir novedades de la barberia ?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lunes</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>miercoles</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>viernes</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="logo de la barberia">
+            <p class="copyright">&copy Copiright barberia chirri</p>
+        </footer>
+    </body>
+
+</html>
